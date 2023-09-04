@@ -14,7 +14,7 @@
       font-family: TOYZ;
       src: url(./media/fonts/TOYZ.ttf);
     }
-    /* Reset default styles */
+
     body, h1, p, div {
       margin: 0;
       padding: 0;
@@ -25,7 +25,6 @@
       background-image: url("./media/background.jpg")
     }
 
-    /* Navigation bar styles */
     .nav-bar {
       background-color: #333;
       color: white;
@@ -34,46 +33,45 @@
       font-family: TOYZ;
     }
 
-    /* Centered viewport with background */
+
     .viewport {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       background: #fff;
-      height: 100vh; /* 80% of the viewport height */
-      margin: 0 10%; /* 10% margin on each side */
+      height: 100vh; 
+      margin: 0 10%; 
       font-family: PinkChicken;
     }
 
-/* Aspect ratio container */
-.aspect-ratio-container {
-  position: relative;
-  max-width: 1080px; /* Maximum width */
-  min-width: 800px;  /* Minimum width */
-  max-height: 600px; /* Maximum height */
-  min-height: 450px; /* Minimum height */
-  width: 85%;
-  margin: 0 auto; /* Center horizontally */
-}
+    .aspect-ratio-container {
+      position: relative;
+      max-width: 1080px; 
+      min-width: 800px; 
+      max-height: 600px;
+      min-height: 450px;
+      width: 85%;
+      margin: 0 auto; 
+      margin-top: 15%;
+    }
 
-/* IFrame styles */
-.aspect-ratio-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+    .aspect-ratio-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 
     .phoneicon {
       position: relative;
-  z-index: 100;
-  transform: scale(0.5);
-  left: 60%;
-  bottom: 0%;
+      z-index: 100;
+      transform: scale(0.5);
+      left: 66.2%;
+      bottom: 48%;
     }
-    /* Title below the iframe */
+
     .bottom-title {
       text-align: center;
       margin-top: 20px;
@@ -86,18 +84,15 @@
   <div class="nav-bar">
     <h1>Proyecto Carita Sonriente</h1>
   </div>
-  
   <div class="viewport">
     <div class="aspect-ratio-container">
       <iframe class="aspect-ratio-content" src="application.html"></iframe>
     </div>
-    
     <div class="bottom-title">
       <h2 class="applicationlink"><a href="./application.html" style="text-decoration: none; color: rgb(255, 255, 255); padding: 10px; background-color: purple; border-radius: 5px;"> Ingresar al Proyecto Carita Sonriente</a></h2>
-      
+      <img class="phoneicon" src="media/phone.png">
     </div>
   </div>
-  <img class="phoneicon" src="media/phone.png">
   </div> 
 </body>
 </html>
